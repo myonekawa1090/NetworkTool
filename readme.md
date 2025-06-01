@@ -17,10 +17,6 @@ pip install scapy
 python main.py --dst <destination IP or hostname> --dport <destination port> [--sport <source port>] [--count <number of packets>]
 ```
 
-```sh
-sudo -E $(which python3) main.py --dst <destination IP or hostname> --dport <destination port> [--sport <source port>] [--count <number of packets>]
-```
-
 - `--dst`: Destination IP address or hostname (required)
 - `--dport`: Destination port number (required)
 - `--sport`: Source port number (optional, random if omitted)
@@ -30,6 +26,12 @@ sudo -E $(which python3) main.py --dst <destination IP or hostname> --dport <des
 
 ```sh
 python main.py --dst 192.168.1.1 --dport 80 --count 5
+```
+
+If sudo is needed, 
+
+```sh
+sudo -E $(which python3) main.py --dst 192.168.1.1 --dport 80 --count 5
 ```
 
 ## Notes
