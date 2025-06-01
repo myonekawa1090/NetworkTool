@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.log
+
+# venv（仮想環境）
+venv/
+ENV/
+env/
+.venv/
+.python-version
+
+# pipenv/poetry（使っていれば）
+Pipfile.lock
+poetry.lock
+
+# VSCode などのIDE設定
+.vscode/
+.idea/
+*.swp
+
+# OS系
+.DS_Store
+Thumbs.db
